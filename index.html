@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>kalkulator</title>
+</head>
+
+<body>
+    <script>
+        var a, group;
+        a = prompt("Input number -> ").replace(
+            /[^0-9%^*\/()\-+.]/g,
+            ""
+        );
+        group = a.split(" ");
+        if ((Number.parseInt(group[0]) | Number.parseInt(group[2])) > 1000000) {
+            alert("Max angka 1 juta");
+        } else {
+            alert(eval(a));
+        }
+        
+        while(true) {
+            var a, group;
+        a = prompt("Input number -> ").replace(
+            /[^0-9%^*\/()\-+.]/g,
+            ""
+        );
+        group = a.split(" ");
+        if ((Number.parseInt(group[0]) | Number.parseInt(group[2])) > 1000000) {
+            alert("Max angka 1 juta");
+        } else {
+            alert(eval(a));
+        }
+        }
+    </script>
+</body>
+
+</html>
